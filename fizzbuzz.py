@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: https://stackoverflow.com/questions/6239967/determining-whether-an-value-is-a-whole-number-in-python
+Author: Jackson
+Credit: https://stackoverflow.com/questions/6239967/determining-whether-an-value-is-a-whole-number-in-python, https://stackoverflow.com/questions/40067822/remove-numbers-from-list-which-contains-some-particular-numbers-in-python
 
 Assignment:
 
@@ -49,7 +49,23 @@ nums = int(input('How many numbers shall we print? '))
 fizz = int(input("For multiples of what number shall we print 'Fizz'? "))
 buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
 
+def befizzy(val):
+    return val % fizz == 0
+    
+def bebuzzy(val):
+    return val % buzz == 0
+
+def befizzbuzzy(val):
+    return (val % fizz == 0) and (val % buzz == 0)
+    
+'filter(befizzy, bebuzzy, befizzbuzzy, range(nums)'
+
 for n in range(nums):
-    if n % fizz == 0
-        print(Fizz)
-    print(n)
+    if n % fizz == 0 and n % buzz == 0:
+        print('FizzBuzz')
+    else:
+        if n % fizz == 0:
+            print('Fizz')
+        elif n % buzz == 0:
+            print('Buzz')
+    print(n, filter(befizzy, bebuzzy, befizzbuzzy, range(nums)))
