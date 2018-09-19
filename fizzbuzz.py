@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
 Author: <your name here>
-Credit: <list sources used, if any>
+Credit: https://stackoverflow.com/questions/6239967/determining-whether-an-value-is-a-whole-number-in-python
 
 Assignment:
 
@@ -44,3 +44,12 @@ Fizz
 Fizz
 Buzz
 """
+
+nums = int(input('How many numbers shall we print? '))
+fizz = int(input("For multiples of what number shall we print 'Fizz'? "))
+buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
+
+for n in range(nums):
+    if n % fizz == 0
+        print(Fizz)
+    print(n)
