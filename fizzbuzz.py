@@ -49,10 +49,12 @@ nums = int(input('How many numbers shall we print? '))
 fizz = int(input("For multiples of what number shall we print 'Fizz'? "))
 buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
 
-def befizzorbuzzy(val):
-    return (val % fizz == 0) or (val % buzz == 0)\
+numrange = range(1, nums+1)
 
-for n in range(nums):
+def befizzorbuzzy(val):
+    return (val % fizz == 0) or (val % buzz == 0)
+
+for n in numrange:
     if n % fizz == 0 and n % buzz == 0:
         print('FizzBuzz')
     elif n % fizz == 0:
